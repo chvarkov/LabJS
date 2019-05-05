@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Survey</title>
+	<link type="text/css" rel="stylesheet" href="assets/css/base.css">
+	<link type="text/css" rel="stylesheet" href="assets/css/style.css">
+	<script src="data/questions.js"></script>
+	<script src="bootstrap.js"></script>
+	<script src="core/Application.js"></script>
+	<script src="app.js"></script>
+</head>
+<body>
+<div class="app-container center">
+	<div class="wrapper-block-25 shadow left">
+		<h2>Questions:</h2>
+		<div class="questions-wrapper scrollable-y">
+
+		</div>
+	</div>
+	<div class="wrapper-block-75 shadow right">
+		<div id="question" class="wrapper-block-100" align="center">
+			<h2 class="text">Text of question</h2>
+		</div>
+		<div class="wrapper-block-100">
+			<button id="btn-prev" class="left">Prev</button>
+			<button id="btn-next" class="right">Next</button>
+		</div>
+	</div>
+
+	<div class="wrapper-block-75 shadow right end-wrapper">
+		<span class="left">Want to complete the test? Click the button "End test".</span>
+		<button id="btn-end" class="right">End test</button>
+	</div>
+
+	<div class="wrapper-block-100 shadow">
+		<span class="center-content center">
+			Lab w<span style="font-size: 12pt">∅</span>rk. Alexey Chvark<span style="font-size: 12pt">∅</span>v.
+		</span>
+	</div>
+	<div style="clear: both"></div>
+</div>
+
+</body>
+
+<template id="question-item">
+	<div class="question-item">
+		<span class="left">Question 1</span>
+		<div class="question-status right"></div>
+		<div style="clear: both"></div>
+	</div>
+</template>
+
+</html>
